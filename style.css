@@ -1,0 +1,599 @@
+
+:root {
+    --color-de-fondo: #F5F5F5;
+    --color-de-fondo-menu: #b5a3cd;
+    --color-de-link: #424242;
+}
+
+body {
+    background-color: var(--color-de-fondo);
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    line-height: 1.8;
+    text-align: center;
+}
+
+ol, ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-de-link);
+}
+
+
+/* ------------------------------ Menú con dirección ------------------------------- */
+.cabecera {
+    margin: 0%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: var(--color-de-fondo-menu);
+}
+
+.cabecera__logo {
+    max-width: 50px; /* Ajuste para pantallas pequeñas */
+    margin: 0%;
+    padding-right: 30px;
+    color: #424242;
+}
+
+.cabecera__titulo {
+    font-size: 20px;
+    text-align: center;
+    color: #424242;
+}
+
+.navegacion__lista {
+    display: none;
+}
+
+.navegacion__lista_contacto{
+    display: flex;
+    padding-left: 110px;
+}
+
+.navegacion__elemento a {
+    font-size: 0.9rem;
+}
+
+/* ------------------------------ Presentación ------------------------------*/
+.presentacion {
+    padding: 40px;
+    line-height: 1.8;
+    color: #424242;
+}
+
+.presentacion__foto {
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px 2px rgb(137, 137, 141);
+}
+
+.presentacion__contenedor {
+    text-align: justify;
+}
+
+.redes {
+    margin: 0%;
+    display: flex;
+    text-align: center;
+    padding-right: 30px;  
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* ------------------------------ Sobre mí ----------------------------------*/
+.sobre-mi {
+    margin: 0%;
+    padding: 0px 40px;
+    line-height: 1.8;
+    color: #424242;
+}
+
+.sobre-mi__texto {
+    text-align: justify;
+}
+
+/*------------------------------ Habilidades ------------------------------*/
+.habilidades {
+    margin: 0px;
+    padding: 20px;
+    line-height: 1.8;
+    text-align: center;
+    color: #424242;
+}
+
+.habilidades__lista {
+    padding: 10px 30px 10px 30px; 
+    margin: 0%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 20px;    
+}
+
+.habilidades__elemento {
+    background-color: #ffffff;
+    padding: 30px 15px 0px 15px;    /*no quitar. deja los cuadros en blanco*/
+    text-align: center;
+    border-radius: 5px;
+    width: 40%;
+    box-shadow: 2px 2px 8px 2px rgb(150, 150, 154);
+}
+
+
+/*------------------------------ Hobbies --------------------------------*/
+.aficiones {
+    margin: 0%;
+    padding: 20px;
+    line-height: 1.8;
+    text-align: center;
+    color: #424242;
+}
+
+.aficiones__lista {
+    padding: 10px 30px 10px 30px; 
+    margin: 0%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 20px;    
+}
+
+.aficiones__elemento {
+    background-color: #ffffff;
+    padding: 30px 15px 0px 15px;    /*no quitar. deja los cuadros en blanco*/
+    text-align: center;
+    border-radius: 5px;
+    width: 40%;
+    box-shadow: 2px 2px 8px 2px rgb(150, 150, 154);
+}
+
+
+/*------------------------------ Formación --------------------------------*/
+.formacion {
+    background-color: #F5F5F5;
+    margin: 0%;
+    padding: 20px;
+    line-height: 1.2;
+    text-align: center;
+    color: #424242;
+}
+
+.formacion__lista {
+    margin: 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px 20px;
+    padding-right: 50px;
+    padding-bottom: 20px;
+}
+
+.formacion__elemento {
+    background-color: #ffffff;
+    padding: 0px 130px 0px 130px;    /*no quitar. deja los cuadros en blanco*/
+    text-align: center;
+    border-radius: 5px;
+    width: 40%;
+    box-shadow: 2px 2px 8px 2px rgb(150, 150, 154);
+}
+
+.formacion__icono1 {
+    text-align: center;
+    width: 110%;
+    margin-top: 40px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.formacion__icono2 {
+    text-align: center;
+    width: 80%;
+    margin-top: 20px;
+}
+
+.formacion__icono3 {
+    text-align: center;
+    width: 80%;
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+/*------------------------------ Proyectos --------------------------------*/
+.proyectos {
+    background-color: #F5F5F5;
+    margin: 0%;
+    padding: 20px;
+    line-height: 1;
+    text-align: center;
+    color: #424242;
+}
+
+.proyectos__titulo {
+    margin: 0%;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.proyectos__descripcion {
+    margin: 0%;
+    padding-bottom: 20px;
+}
+
+.proyectos__contenedor {
+    margin: 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.proyecto__img {
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px 2px rgb(150, 150, 154);
+}
+
+.proyecto__boton{
+    background-color: rgb(47, 100, 180);
+    border: none;
+    padding: 15px 50px 15px 50px;
+    color: #F5F5F5;
+    border-radius: 5px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+}
+
+
+/*------------------------------ Contacto ---------------------------------*/
+.presentacion__foto-Estefania {
+    display: none;
+}
+
+.contacto {
+    background-color: #f5e8f4;
+    padding: 40px;
+    line-height: 1.8;
+    color: #424242;
+}
+
+.descripcion__contacto {
+    text-align: justify;
+}
+
+.contacto__campo {
+    flex-direction: column;
+    width: 400px;
+    height: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    text-align: left;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 2px 2px 8px 2px rgb(150, 150, 154);
+}
+
+.contacto__campo--textarea {
+    font-family: 'Raleway', sans-serif;
+    flex-direction: column;
+    width: 400px;
+    height: 150px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    text-align: left;
+    border-radius: 5px;
+    border: none;
+    line-height: 50px;
+    box-shadow: 2px 2px 8px 2px rgb(150, 150, 154);
+}
+
+.contacto__boton {
+    background-color: rgb(47, 100, 180);
+    border: none;
+    padding: 15px 90px 15px 90px;
+    color: #F5F5F5;
+    border-radius: 5px;
+    font-size: 15px;
+    margin-top: 15px;
+    display: flex;
+    align-items: flex-start;
+}
+
+
+/*------------------------------ Pie de página ---------------------------------*/
+.footer {
+    background-color: #b5a3cd;;
+    color: #ffffff;
+    padding: 2px;
+    text-align: center;    
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1;             /* interlineado */
+}
+
+#micorreo {
+    opacity: 0;
+}
+
+
+
+/* ------------------------------ Responsividad ---------------------------------------*/
+
+/* Tablets y pantallas más grandes */
+@media (min-width: 768px) {
+    .cabecera {
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .cabecera__logo {
+        max-width: 100px;
+    }
+
+    .cabecera__titulo {
+        font-size: 1.5rem;
+    }
+
+    .navegacion__lista {
+        display: none;
+    }
+    
+    .navegacion__lista_contacto{
+        display: flex;
+        padding-left: 330px;
+    }
+
+    .navegacion__elemento a {
+        font-size: 1rem;
+    }
+
+
+/* ------------------------------ Presentación ------------------------------*/
+    .redes {
+        display: flex;
+        justify-content: center;
+        padding-top: 10px;
+        flex-direction: row;
+        gap: 40px;
+    }
+
+
+/*------------------------------ Habilidades ------------------------------*/
+    .habilidades__lista {
+        justify-content: center; 
+    }
+
+
+/*------------------------------ Aficiones --------------------------------*/
+    .aficiones__lista {
+        justify-content: center;
+    }
+
+
+/*------------------------------ Formación --------------------------------*/
+    .formacion__lista {
+        padding-top: 10px;
+    }
+
+
+/*------------------------------ Contacto ---------------------------------*/
+    .contacto {
+        padding-top: 10px;
+        text-align: left;
+    }
+
+    .contacto__campo {
+        display: flex;
+        align-items: flex-start;
+        width: 670px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .contacto__campo--textarea {
+        display: flex;
+        align-items: flex-start;
+        width: 670px;
+        height: 200px;
+        text-align: left;
+        font-size: 15px;
+    }
+}
+
+
+
+
+/* Pantallas grandes */
+@media (min-width: 1024px) {
+    /* Aquí puedes ajustar aún más el diseño para pantallas grandes */
+
+    .cabecera{
+        display: flex;
+        justify-content: center;
+    }
+
+    .cabecera__titulo {
+        font-size: 1.8rem;
+        padding-right: 300px;
+    }
+
+    .navegacion__lista { 
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        gap: 30px;
+    }
+
+    .navegacion__lista_contacto{
+        display: none;
+    }
+
+    .navegacion__elemento a {
+        font-size: 1.1rem;
+    }
+
+
+/* ------------------------------ Presentación ------------------------------*/
+    .presentacion {
+        padding: 50px 60px 50px 60px;
+        line-height: 1.8;
+        display: flex;
+        align-items: center;
+        gap: 50px;
+    }    
+
+    .redes {
+        display: flex;
+        justify-content: flex-start;
+        padding-top: 10px;
+        padding-left: 0%;
+        flex-direction: row;
+        gap: 40px;
+    }
+
+
+/* ------------------------------ Sobre mí ----------------------------------*/
+    .sobre-mi {
+        text-align: center;
+        padding: 15px 60px 0px 60px;
+    }
+    
+
+/*------------------------------ Habilidades ------------------------------*/
+    .habilidades {
+        padding: 40px 60px 40px 60px;
+    }
+
+
+/*------------------------------ Hobbies ------------------------------*/
+
+    .aficiones {
+        padding: 20px 60px 50px 60px;
+    }
+
+
+/*------------------------------ Formación --------------------------------*/
+    .formacion {
+        padding: 20px 60px 40px 60px;
+    }
+
+    .formacion__titulo {
+        padding-bottom: 10px;
+    }
+
+    .formacion__lista {
+        padding: 0px; 
+        margin: 0%;
+        display: flex;
+        flex-direction: row;
+        gap: 20px 20px;    
+    }
+
+    .formacion__elemento {
+        background-color: #ffffff;
+        text-align: center;
+        border-radius: 5px;
+        width: 40%;
+        box-shadow: 2px 2px 8px 2px rgb(150, 150, 154);
+    }
+
+    .formacion__icono1 {
+        padding-top: 18px;
+        padding-bottom: 18px;
+        max-width: 100%;
+    }
+
+    .formacion__icono2 {
+        max-width: 51%;
+    }
+
+    .formacion__icono3 {
+        max-width: 70%;
+    }
+
+
+/*------------------------------ Proyectos --------------------------------*/
+    .proyectos {
+        padding: 20px 60px 40px 60px;
+    }
+
+    .proyectos__titulo {
+        padding-bottom: 40px;
+    }
+
+    .proyectos__contenedor {
+        display: flex;
+        flex-direction: row;
+        justify-content: center
+    }
+
+    .proyecto__img {
+        max-width: 50%;
+    }
+
+    .descripcion__proyecto {
+        padding-left: 30px;
+        text-align: justify;
+    }
+
+    .proyecto__boton:hover{   
+        background-color:  rgb(99, 113, 190);
+        cursor: pointer;
+        box-shadow: 2px 2px 8px 2px rgb(150, 150, 154);
+    }
+
+
+
+/*------------------------------ Contacto ------------------------------*/
+
+    .presentacion__foto-Estefania {
+        display: flex;
+        border-radius: 10px;
+        box-shadow: 2px 2px 8px 2px rgb(137, 137, 141);
+    }
+
+    .contacto {
+        padding: 10px 50px 30px 50px;
+        line-height: 1.8;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .descripcion__contacto {
+        text-align: justify;
+    }
+
+    .contacto__campo {
+        width: 670px;
+        text-align: left;
+        font-size: 16px;
+    }
+
+    .contacto__campo--textarea {
+        width: 670px;
+        height: 200px;
+        text-align: left;
+        font-size: 16px;
+    }
+
+    .contacto__boton {
+        font-size: 16px;
+    }
+    
+    .contacto__boton:hover{   
+        background-color:  rgb(99, 113, 190);
+        cursor: pointer;
+        box-shadow: 2px 2px 8px 2px rgb(150, 150, 154);
+    }
+}
